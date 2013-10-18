@@ -58,10 +58,10 @@ like:
 
 You can use these methods with the following line of code
 
-`notificationService.info(content);`
-`notificationService.notice(content);`
-`notificationService.error(content);`
-`notificationService.success(content);`
+ * `notificationService.info(content);`
+ * `notificationService.notice(content);`
+ * `notificationService.error(content);`
+ * `notificationService.success(content);`
 
 Or you can also use a generic notify method with more customization
 by passing the pines notify's options object:
@@ -74,7 +74,7 @@ For example:
 myAppModule.controller(
   'MyCtrl',
   [
-    '$scope', notificationService',
+    '$scope', notificationService,
     function($scope, notificationService) {
       $scope.action = function() {
         // This is a sample using the success helper method
