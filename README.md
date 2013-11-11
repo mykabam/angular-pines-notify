@@ -11,8 +11,10 @@ to display notifications on web applications.
 - [Pines Notify](http://pinesframework.org/pnotify/)
 - [AngularJS](http://angularjs.org/)
 
-Optionally it can use [Twitter Bootstrap](http://getbootstrap.com) or [jqueryui](http://jqueryui.com)
+Optionally it can use [Twitter Bootstrap](http://getbootstrap.com/2.3.2/) or [jqueryui](http://jqueryui.com)
 for themeing the notifications.
+
+Unfortunatelly the supported Twitter Bootstrap version is still 2.3.2, because of the dependence on Pines Notify. A fix for bootsrap 3 is available [here](https://github.com/sciactive/pnotify/issues/60)
 
 ## Setup
 
