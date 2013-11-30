@@ -5,7 +5,7 @@ This is a simple wrapper for [pines-notify](http://pinesframework.org/pnotify/) 
 [AngularJS](http://angularjs.org/) service. This service provides several helper methods
 to display notifications on web applications.
 
-## Requirements
+### Requirements
 
 - [JQuery](http://jquery.com/)
 - [Pines Notify](http://pinesframework.org/pnotify/)
@@ -16,7 +16,15 @@ for themeing the notifications.
 
 Unfortunatelly the supported Twitter Bootstrap version is still 2.3.2, because of the dependence on Pines Notify. A fix for bootsrap 3 is available [here](https://github.com/sciactive/pnotify/issues/60)
 
-## Setup
+### Demo
+
+`$ git clone https://github.com/mykabam/angular-pines-notify.git`
+`$ cd angular-pines-notify`
+`$ bower install angular-pines-notify`
+
+browser open `app/demo.html`
+
+### Setup
 
 We use [bower](https://github.com/bower/bower) for dependency management. Install angular-pines-notify
 into your project by running the command
@@ -41,7 +49,7 @@ Load the script files in your application:
 
 (Note that `jquery` must be loaded before `angular` so that it doesn't use `jqLite` internally)
 
-## Usage
+### Usage
 
 Add the angular-pines-notify module as a dependency to your application module:
 
@@ -96,7 +104,7 @@ myAppModule.controller(
 );
 ```
 
-## Options
+### Options
 
 All the pines-notify options can be passed through the notify functions.
 You can read more about the supported list of options and what they do on the
