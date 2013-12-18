@@ -73,6 +73,22 @@ You can use these methods with the following line of code
  * `notificationService.error(content);`
  * `notificationService.success(content);`
 
+You can use the provider to set defaults for all your notifications:
+
+```javascript
+myAppModule.config(['notificationServiceProvider', function(notificationServiceProvider){
+  
+  notificationServiceProvider.setDefaults({
+    history: false,
+    delay: 4000,
+    styling: 'bootstrap',
+ 		closer: false,
+		closer_hover: false
+  });
+  
+}]);
+```
+ 
 Or you can also use a generic notify method with more customization
 by passing the pines notify's options object:
 
