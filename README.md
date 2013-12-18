@@ -107,14 +107,14 @@ myAppModule.controller(
 You can use the provider to set defaults for all your notifications:
 
 ```javascript
-myAppModule.config(['notificationServiceProvider', function(notificationServiceProvider){
+myAppModule.config(['notificationServiceProvider', function(notificationServiceProvider) {
   
   notificationServiceProvider.setDefaults({
     history: false,
     delay: 4000,
     styling: 'bootstrap',
- 		closer: false,
-		closer_hover: false
+ 	  closer: false,
+	  closer_hover: false
   });
   
 }]);
