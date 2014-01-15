@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "angular": "~1",
-    "pines-notify": "mykabam/pines-notify",
+    "pines-notify": "git://github.com/mykabam/pines-notify#1.2.0-fork.1",
     "jquery": ">=1.9"
   }
 }
