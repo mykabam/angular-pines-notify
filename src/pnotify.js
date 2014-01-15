@@ -2,13 +2,13 @@ angular.module('ui.notify', []).
   provider('notificationService', [ function() {
 
     var settings = {
-      styling: 'bootstrap' // or 'jqueryui'
+      styling: 'bootstrap3' // or 'jqueryui'
     };
 
     this.setDefaults = function(defaults) { settings = defaults };
-    
-    this.$get = [ function() { 
-    
+
+    this.$get = [ function() {
+
       return {
 
         /* ========== SETTINGS RELATED METHODS =============*/
@@ -54,5 +54,5 @@ angular.module('ui.notify', []).
       };
 
     }];
-    
+
   }]);

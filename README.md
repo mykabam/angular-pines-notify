@@ -11,10 +11,13 @@ to display notifications on web applications.
 - [Pines Notify](http://pinesframework.org/pnotify/)
 - [AngularJS](http://angularjs.org/)
 
-Optionally it can use [Twitter Bootstrap](http://getbootstrap.com/2.3.2/) or [jqueryui](http://jqueryui.com)
+Optionally it can use [Twitter Bootstrap](http://getbootstrap.com) or [jqueryui](http://jqueryui.com)
 for themeing the notifications.
 
-Unfortunatelly the supported Twitter Bootstrap version is still 2.3.2, because of the dependence on Pines Notify. A fix for bootsrap 3 is available [here](https://github.com/sciactive/pnotify/issues/60)
+This version supports Twitter Bootstrap 3 by using a fork of pnotify that implements its modification:
+
+ * [pull request](https://github.com/sciactive/pnotify/pull/87)
+ * [pines-notify](https://github.com/mykabam/pines-notify)
 
 ### Demo
 
@@ -72,7 +75,7 @@ You can use these methods with the following line of code
  * `notificationService.notice(content);`
  * `notificationService.error(content);`
  * `notificationService.success(content);`
- 
+
 Or you can also use a generic notify method with more customization
 by passing the pines notify's options object:
 
@@ -108,7 +111,7 @@ You can use the provider to set defaults for all your notifications:
 
 ```javascript
 myAppModule.config(['notificationServiceProvider', function(notificationServiceProvider) {
-  
+
   notificationServiceProvider.setDefaults({
     history: false,
     delay: 4000,
@@ -116,7 +119,7 @@ myAppModule.config(['notificationServiceProvider', function(notificationServiceP
  	  closer: false,
 	  closer_hover: false
   });
-  
+
 }]);
 ```
 
