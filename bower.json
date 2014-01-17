@@ -1,6 +1,6 @@
 {
   "name": "angular-pines-notify",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-alpha.1",
   "homepage": "https://github.com/mykabam/angular-pines-notify",
   "authors": [
     "T. Budiman <tbudiman@gmail.com>"
@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "angular": "~1",
-    "pines-notify": "git://github.com/mykabam/pines-notify#1.2.0-fork.1",
+    "pines-notify": "git://github.com/sciactive/pnotify.git#3b8e06115a",
     "jquery": ">=1.9"
   }
 }
