@@ -8,16 +8,23 @@
 <head>
 <meta charset="utf-8">
 
-<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/jquery.pnotify.default.css" />
-<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/jquery.pnotify.default.icons.css" />
-<link type="text/css" rel="stylesheet" href="bower_components/pines-notify/includes/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../bower_components/pines-notify/pnotify.core.css" />
+<link rel="stylesheet" type="text/css" href="../bower_components/pines-notify/pnotify.buttons.css" />
+<link rel="stylesheet" type="text/css" href="../bower_components/pines-notify/pnotify.picon.css" />
 <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/ui-lightness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 
-<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
-<script type="text/javascript" src="bower_components/pines-notify/jquery.pnotify.js"></script>
-<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="bower_components/angular-pines-notify/src/pnotify.js"></script>
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.core.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.buttons.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.callbacks.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.confirm.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.desktop.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.history.js"></script>
+<script type="text/javascript" src="../bower_components/pines-notify/pnotify.nonblock.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="..//src/pnotify.js"></script>
 
 </head>
 
@@ -48,7 +55,7 @@ var data = {
 		title_escape: false, // Whether to escape the content of the title. (Not allow HTML.)
 		text: 'The notice text.', // The notice's text.
 		text_escape: false, // Whether to escape the content of the text. (Not allow HTML.)
-		styling: "bootstrap3", // What styling classes to use. (Can be either jqueryui or bootstrap or bootstrap3.)
+		styling: "bootstrap3", // What styling classes to use. (Can be either jqueryui or fontawesome or bootstrap2.)
 		// addclass: "", // Additional classes to be added to the notice. (For custom styling.)
 		// cornerclass: "", // Class to be added to the notice for corner styling.
 		// nonblock: false, // Create a non-blocking notice. It lets the user click elements underneath it.
