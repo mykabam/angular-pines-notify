@@ -1,23 +1,18 @@
 angular-pines-notify
 ====================
 
-This is a simple wrapper for [pines-notify](http://pinesframework.org/pnotify/) as and
+This is a simple wrapper for [pines-notify](http://sciactive.com/pnotify/) as an
 [AngularJS](http://angularjs.org/) service. This service provides several helper methods
 to display notifications on web applications.
 
 ### Requirements
 
 - [JQuery](http://jquery.com/)
-- [Pines Notify](http://pinesframework.org/pnotify/)
+- [Pines Notify](http://sciactive.com/pnotify/)
 - [AngularJS](http://angularjs.org/)
 
 Optionally it can use [Twitter Bootstrap](http://getbootstrap.com) or [jqueryui](http://jqueryui.com)
-for themeing the notifications.
-
-This version supports Twitter Bootstrap 3 by using a fork of pnotify that implements its modification:
-
- * [pull request](https://github.com/sciactive/pnotify/pull/87)
- * [pines-notify](https://github.com/mykabam/pines-notify)
+for theming the notifications.
 
 ### Demo
 
@@ -41,11 +36,18 @@ This will copy the angular-pines-notify files into your `bower_components` folde
 Load the script files in your application:
 
 ```html
-<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/jquery.pnotify.default.css" />
-<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/jquery.pnotify.default.icons.css" />
+<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/pnotify.core.css" />
+<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/pnotify.buttons.css" />
+<link rel="stylesheet" type="text/css" href="bower_components/pines-notify/pnotify.picon.css" />
 
 <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
-<script type="text/javascript" src="bower_components/pines-notify/jquery.pnotify.js"></script>
+<script src="bower_components/pines-notify/pnotify.core.js"></script>
+<script src="bower_components/pines-notify/pnotify.buttons.js"></script>
+<script src="bower_components/pines-notify/pnotify.callbacks.js"></script>
+<script src="bower_components/pines-notify/pnotify.confirm.js"></script>
+<script src="bower_components/pines-notify/pnotify.desktop.js"></script>
+<script src="bower_components/pines-notify/pnotify.history.js"></script>
+<script src="bower_components/pines-notify/pnotify.nonblock.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="bower_components/angular-pines-notify/src/pnotify.js"></script>
 ```

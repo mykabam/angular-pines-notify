@@ -2,7 +2,7 @@ angular.module('ui.notify', []).
   provider('notificationService', [ function() {
 
     var settings = {
-      styling: 'bootstrap3' // or 'jqueryui'
+      styling: 'bootstrap3' // or 'jqueryui' or 'bootstrap2'
     };
 
     this.setDefaults = function(defaults) { settings = defaults };
@@ -48,7 +48,7 @@ angular.module('ui.notify', []).
         },
 
         notify: function(hash) {
-          return jQuery.pnotify(hash);
+          return new PNotify(hash);
         }
 
       };
