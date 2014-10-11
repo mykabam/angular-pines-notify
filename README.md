@@ -1,3 +1,10 @@
+Note: This project are not maintained anymore.
+
+I recommend to use Jacques Lareau's version: https://github.com/jacqueslareau/angular-pnotify
+
+    $ bower install angular-pnotify
+
+
 angular-pines-notify
 ====================
 
