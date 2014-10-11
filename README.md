@@ -1,4 +1,4 @@
-Note: This project are not maintained anymore.
+Note: This project is not maintained anymore.
 
 I recommend to use Jacques Lareau's version: https://github.com/jacqueslareau/angular-pnotify
 
